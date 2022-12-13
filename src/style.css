@@ -198,3 +198,9 @@ body::before {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
+
+.catImage {
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+}
