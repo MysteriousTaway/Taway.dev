@@ -1,0 +1,200 @@
+/* Palette: https://colorhunt.co/palette/453c676d67e446c2cbf2f7a1 */
+/* Font: https://fonts.google.com/specimen/Montserrat */
+:root {
+    /* Original color palette = neon */
+    /* --BGDark: rgb(0, 0, 0);
+    --BGLight: rgb(21, 0, 80);
+    --BGAccent: rgb(63, 0, 113);
+    --Text: rgb(251, 37, 118);
+
+    --I_BGDark: rgb(255, 255, 255);
+    --I_BGLight: rgb(234, 255, 175);
+    --I_BGAccent: rgb(192, 255, 142);
+    --I_Text: rgb(4, 218, 137); */
+
+    /* Gray, white, orange color palette */
+    /* --BGDark: rgb(34, 40, 49);
+    --BGLight: rgb(48, 71, 94);
+    --BGAccent: rgb(240, 84, 84);
+    --Text: rgb(221, 221, 221);
+
+    --I_BGDark: rgb(221, 215, 206);
+    --I_BGLight: rgb(207, 184, 161);
+    --I_BGAccent: rgb(15, 171, 171);
+    --I_Text: rgb(34, 34, 34); */
+    /* Black with red https://colorhunt.co/palette/171717444444da0037ededed */
+    --BGDark: rgb(23, 23, 23);
+    --BGLight: rgb(68, 68, 68);
+    --BGAccent: rgb(218, 0, 55);
+    --Text: rgb(237, 237, 237);
+    --Text_Highlight: rgb(0, 0, 0);
+
+    --I_BGDark: rgb(232, 232, 232);
+    --I_BGLight: rgb(187, 187, 187);
+    --I_BGAccent: rgb(37, 255, 200);
+    --I_Text: rgb(18, 18, 18);
+    --I_Text_Highlight: rgb(255, 255, 255);
+    --animation_duration: 30s;
+}
+
+* {
+    color: var(--Text);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--BGDark);
+    height: 100vh;
+}
+
+.animation {
+    background: linear-gradient(-45deg, var(--BGDark), var(--BGLight));
+    background-size: 400% 400%;
+    animation: gradient var(--animation_duration) ease infinite;
+}
+
+.animation_reverse {
+    background: linear-gradient(-45deg, var(--BGDark), var(--BGLight));
+    background-size: 400% 400%;
+    animation: gradient var(--animation_duration) ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body::before {
+    /* scanline effect, credits Cyuucat and Zusier*/
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(20, 20, 20, 0) 66%, rgba(0, 0, 0, 0.15) 33%);
+    background-size: 100% 5px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: scanlines-anim 1.0s linear infinite;
+}
+
+@keyframes scanlines-anim {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 0px 15px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    body::before {
+        background-size: 100% 4px;
+    }
+}
+
+.center {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; */
+    text-align: center;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    color: var(--I_Text);
+    text-shadow: 3px 3px var(--I_BGAccent);
+}
+
+.subtitle {
+    color: var(--BGAccent);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 150%;
+    opacity: 50%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.combar {
+    font-size: large;
+    position: relative;
+    top: 1%;
+}
+
+.combar span {
+    /* background-color: var(--BGAccent); */
+    background: linear-gradient(-45deg, var(--BGLight), var(--BGAccent));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: var(--Text);
+    border-radius: 15px 0px 15px 0px;
+    /* padding: 0.5em 1em; */
+}
+.combar a {
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+.combar a:hover {
+    /* background-color: var(--Text);
+    color: var(--BGAccent);*/
+    color: var(--Text_Highlight);
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .container {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Display settings for large screens */
+@media screen and (min-width: 650px) {
+    .container {
+        width: 50%;
+        display: block;
+        margin-left: 25%;
+    }
+}
+
+.container {
+    padding: 0 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    text-shadow: 2px 2px var(--BGAccent);
+    text-align: left;
+}
+
+.container span {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
