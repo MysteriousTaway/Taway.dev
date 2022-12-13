@@ -31,6 +31,47 @@
         opacity: 100%;
     }
 }
+.friends {
+    /* border: solid 4px var(--BGAccent); */
+    margin: 10px;
+    padding: 6px;
+    /* border-radius: 15px 0px 15px 0px; */
+    background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
+    linear-gradient(to right, var(--BGLight), var(--BGLight)) border-box;
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid transparent;
+
+    min-width: 400px;
+    max-width: 400px;
+
+    min-height: none;
+    max-height: none;
+    
+    position: relative;
+
+    opacity: 75%;
+}
+
+.friends a:hover {
+    color: var(--BGAccent);
+}
+
+.friends:hover {
+    background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
+    linear-gradient(to right, var(--BGLight), var(--BGAccent)) border-box;
+}
+
+.friends h2 {
+    text-shadow: 2px 2px var(--BGAccent);
+    text-align: left;
+    margin-top: 2px;
+}
+
+.friends span {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
 
 .contact {
     /* border: solid 4px var(--BGAccent); */
