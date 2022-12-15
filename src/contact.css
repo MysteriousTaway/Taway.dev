@@ -127,6 +127,7 @@
 }
 
 .github {
-    background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
-    linear-gradient(45deg, var(--BGDark), rgb(0, 0, 0)) border-box !important;
+    /* background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
+    linear-gradient(45deg, var(--BGDark), rgb(0, 0, 0)) border-box !important; */
+    border: solid var(--BGLight);
 }
