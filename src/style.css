@@ -174,9 +174,9 @@ body::before {
     }
     .catImage {
         position: fixed;
-        right: 2px;
+        left: 2px;
         bottom: 2px;
-        opacity: 50%;
+        opacity: 0%;
     }
 }
 
@@ -211,6 +211,8 @@ body::before {
 }
 
 .catImage {
+    width: fit-content;
+    height: fit-content;
     position: fixed;
     right: 20px;
     bottom: 2px;
