@@ -172,6 +172,12 @@ body::before {
         width: 100%;
         display: block;
     }
+    .catImage {
+        position: fixed;
+        right: 2px;
+        bottom: 2px;
+        opacity: 50%;
+    }
 }
 
 /* Display settings for large screens */
@@ -180,6 +186,11 @@ body::before {
         width: 50%;
         display: block;
         margin-left: 25%;
+    }
+    .catImage {
+        position: fixed;
+        right: 20px;
+        bottom: 2px;
     }
 }
 
@@ -201,6 +212,6 @@ body::before {
 
 .catImage {
     position: fixed;
-    right: 2px;
+    right: 20px;
     bottom: 2px;
 }
