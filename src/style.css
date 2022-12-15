@@ -217,3 +217,7 @@ body::before {
     right: 20px;
     bottom: 2px;
 }
+
+.note {
+    color: var(--Text);
+}
