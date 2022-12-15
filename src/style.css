@@ -1,27 +1,6 @@
 /* Palette: https://colorhunt.co/palette/453c676d67e446c2cbf2f7a1 */
 /* Font: https://fonts.google.com/specimen/Montserrat */
 :root {
-    /* Original color palette = neon */
-    /* --BGDark: rgb(0, 0, 0);
-    --BGLight: rgb(21, 0, 80);
-    --BGAccent: rgb(63, 0, 113);
-    --Text: rgb(251, 37, 118);
-
-    --I_BGDark: rgb(255, 255, 255);
-    --I_BGLight: rgb(234, 255, 175);
-    --I_BGAccent: rgb(192, 255, 142);
-    --I_Text: rgb(4, 218, 137); */
-
-    /* Gray, white, orange color palette */
-    /* --BGDark: rgb(34, 40, 49);
-    --BGLight: rgb(48, 71, 94);
-    --BGAccent: rgb(240, 84, 84);
-    --Text: rgb(221, 221, 221);
-
-    --I_BGDark: rgb(221, 215, 206);
-    --I_BGLight: rgb(207, 184, 161);
-    --I_BGAccent: rgb(15, 171, 171);
-    --I_Text: rgb(34, 34, 34); */
     /* Black with red https://colorhunt.co/palette/171717444444da0037ededed */
     --BGDark: rgb(23, 23, 23);
     --BGLight: rgb(68, 68, 68);
@@ -34,6 +13,18 @@
     --I_BGAccent: rgb(37, 255, 200);
     --I_Text: rgb(18, 18, 18);
     --I_Text_Highlight: rgb(255, 255, 255);
+
+    /* Gray, white, orange color palette */
+    /* --BGDark: rgb(34, 40, 49);
+    --BGLight: rgb(48, 71, 94);
+    --BGAccent: rgb(240, 84, 84);
+    --Text: rgb(221, 221, 221);
+
+    --I_BGDark: rgb(221, 215, 206);
+    --I_BGLight: rgb(207, 184, 161);
+    --I_BGAccent: rgb(15, 171, 171);
+    --I_Text: rgb(34, 34, 34); */
+
     --animation_duration: 30s;
 }
 
@@ -104,14 +95,6 @@ body::before {
     body::before {
         background-size: 100% 4px;
     }
-}
-
-.center {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; */
-    text-align: center;
 }
 
 .title {
@@ -216,4 +199,40 @@ body::before {
     position: fixed;
     right: 20px;
     bottom: 2px;
+}
+
+/* UTILITY: */
+.note {
+    color: var(--Text) !important;
+    font-style: italic !important;
+}
+
+/* Text size: */
+.smaller {
+    font-size: smaller!important;
+}
+
+.small {
+    font-size: small!important;
+}
+
+.large {
+    font-size: large!important;
+}
+
+.larger {
+    font-size: larger!important;
+}
+
+/* Text alignment: */
+.left {
+    text-align: left!important;
+}
+
+.center {
+    text-align: center!important;
+}
+
+.right {
+    text-align: right!important;
 }
