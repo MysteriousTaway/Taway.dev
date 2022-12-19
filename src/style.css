@@ -236,3 +236,9 @@ body::before {
 .right {
     text-align: right!important;
 }
+
+.center_iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
