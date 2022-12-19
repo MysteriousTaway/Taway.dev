@@ -136,8 +136,3 @@
     background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
     linear-gradient(45deg, var(--BGDark), rgb(255, 0, 0)) border-box !important;
 }
-
-.onlyfans {
-    background: linear-gradient(var(--BGDark), var(--BGDark)) padding-box,
-    linear-gradient(45deg, var(--BGDark), rgb(0, 175, 240)) border-box !important;
-}
