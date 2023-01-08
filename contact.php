@@ -15,24 +15,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 </style>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taway.dev - Contact</title>
-    <h4 class="center subtitle"> /* Back-end developer */ </h4>
-    <h1 class="title invert">Taway.dev</h1>
-    <div class="combar center">
-        <span>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
-            <a href="projects.html">Projects</a>
-        </span>
-    </div>
-</head>
-<br><br>
+<?php
+include('template/header.php');
+?>
 <h1 class="center">Contact</h1>
 <div class="note center">
     NOTE: Make sure to state the reason why you are contacting me.
@@ -106,13 +91,16 @@
     </div>
     <h1 class="center">Support</h1>
     <div class="note center small">
-        NOTE: Donations are voluntary and are not required. (And nonrefundable; I'm not a business)
+        NOTE: Donations are voluntary. (And nonrefundable)
     </div><br>
     <div class="row center">
         <span class="contact paypal">
             <h1>PayPal</h1>
             <b>@MysteriousTaway</b><br><br>
             <img src="img/donate/PayPal.png" width="128" height="128" alt="PayPal QR Code">
+            <!-- <form target="_blank" action="https://www.paypal.com/donate/?hosted_button_id=8LU8P7VUCYMM6">
+                <input type="submit" value="Donate" />
+            </form> -->
         </span>
         <span class="contact ethereum">
             <h1>Ethereum</h1>
@@ -123,6 +111,9 @@
             <h1>Revolut</h1>
             <b>@taway</b><br><br>
             <img src="img/donate/Revolut.jpg" width="128" height="128" alt="Revolut QR Code">
+            <!-- <form target="_blank" action="https://revolut.me/taway">
+                <input type="submit" value="Donate" />
+            </form> -->
         </span>
     </div>
     <h1 class="center">Other</h1>
@@ -143,11 +134,7 @@
         </div>
     </div>
 </body>
-<footer>
-    <div class="catImage">
-        <!-- <img src="img/sticker.webp" width="128" height="128" alt="cat"> -->
-        <img src="img/Tabbie.png" width="150" height="196" alt="cat">
-    </div>
-</footer>
-
+<?php
+include('template/footer.php');
+?>
 </html>

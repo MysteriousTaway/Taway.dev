@@ -1,0 +1,101 @@
+{
+    "projects": [
+        {
+            "Name":"GPTCSV",
+            "Link":"https://github.com/MysteriousTaway/GPTCSV",
+            "Language":"C#",
+            "Description":"A CLI application that takes CSV input and sends them to ChatGPT."
+        },  
+        {
+            "Name":"Taway.dev",
+            "Link":"https://github.com/MysteriousTaway/Taway.dev",
+            "Language":"PHP, HTML, CSS",
+            "Description":"You're looking at it right now! :3"
+        },        
+        {
+            "Name":"PhoneThingy",
+            "Link":"https://github.com/MysteriousTaway/PhoneThingy",
+            "Language":"Java",
+            "Description":"A college assignment that I've completed for a friend of mine. It basically translates your input to numbers on a those cool old phones."
+        },        
+        {
+            "Name":"FreezeCheck_CLI",
+            "Link":"https://github.com/MysteriousTaway/FreezeCheck_CLI",
+            "Language":"C#",
+            "Description":"A highschool graduation project (because I was not able to complete the powershell one due to technical issues) It checks Toolwiz Timefreeze runs on that PC and if not it sends a POST request to inform admin."
+        },       
+        {
+            "Name":"ShellPost",
+            "Link":"https://github.com/MysteriousTaway/ShellPost",
+            "Language":"PowerShell",
+            "Description":"My original graduation project which I could not finish due to technical issues. It was hella fun to work on tho."
+        },        
+        {
+            "Name":"PowershellWebsite",
+            "Link":"https://github.com/MysteriousTaway/PowershellWebsite",
+            "Language":"PowerShell",
+            "Description":"A project I was working on for fun and I just wanted to see if I'm capable of coding something so r#t@rded as this."
+        },       
+        {
+            "Name":"IPScanner",
+            "Link":"https://github.com/MysteriousTaway/IPScanner",
+            "Language":"Java",
+            "Description":"A thing that I made at my first internship. It is quite hard to use ngl. If I ever coded something similar again I would do it completely differently. Great learning experience tho."
+        },        
+        {
+            "Name":"JFXDraw",
+            "Link":"https://github.com/MysteriousTaway/JFXDraw",
+            "Language":"Java",
+            "Description":"A paint like program in Java FX. Made as a school project. It was a lot and I mean A LOT of fun to work on this."
+        },       
+        {
+            "Name":"Overseer",
+            "Link":"https://github.com/MysteriousTaway/MCL_Overseer",
+            "Language":"Java",
+            "Description":"Minecraft plugin that I worked on for quite a while. It's still unfinished tho. It can automatically kick/ban players and is gathering statistics about player activity in the background."
+        },        
+        {
+            "Name":"PotionWalker",
+            "Link":"https://github.com/MysteriousTaway/PotionWalker",
+            "Language":"Java",
+            "Description":"PaperMC plugin. Back in the second year of highschool one classmate nearly got kicked out for failing his programming class and was tasked to make a program of a certain complexity. I helped him and this is the result of cca 13 hours of coding."
+        },       
+        {
+            "Name":"Electricity Company",
+            "Link":"https://github.com/MysteriousTaway/Electricity_Company",
+            "Language":"Java",
+            "Description":"A simple script that generates customers for a fictional company and visualizes their bill as a graph in the console."
+        },       
+        {
+            "Name":"Conway's game of life",
+            "Link":"https://github.com/MysteriousTaway/conways_game_of_life",
+            "Language":"Java",
+            "Description":"A simple (and non functional) CGoL. It has a major issue with next generation calculation. It calculates next generation on the same grid as it writes the next one. This as you can see is an issue."
+        },       
+        {
+            "Name":"OwOfy",
+            "Link":"https://github.com/MysteriousTaway/OwOfy",
+            "Language":"Java",
+            "Description":"Input text and every 'R' and 'L' will be magically 'W'. I made this as a joke to learn more about programming in java."
+        },       
+        {
+            "Name":"AI Number Guesser",
+            "Link":"https://github.com/MysteriousTaway/AI-Number-Guesser",
+            "Language":"Java",
+            "Description":"My first ever program coded in Java. It generates a random number then it moves upper and lower borders until it finds the number and counts how many times it has to move these borders until it finds the number. It's basically useless but I did learn a LOT on this project."
+        },       
+        {
+            "Name":"Starhold",
+            "Link":"error.php?error=project404",
+            "Language":"Batch",
+            "Description":"A space strategy game where you manage your star empire. I spent like 80 hours on this and had a working menu where you could serialize and deserialize saved faction configs. But just like SuperQuest this project is lost to time."
+        },       
+        {
+            "Name":"SuperQuest",
+            "Link":"error.php?error=project404",
+            "Language":"Batch",
+            "Description":"My first ever program EVER! People gotta start somewhere and i started programming with Batch. It was 2018 and I was in 8th grade. This project was a very bad attempt to make a multiple choice story game, but I did learn the absolute basics of programming on this. Unfortunately this project is lost to time :("
+        }        
+
+    ]
+}

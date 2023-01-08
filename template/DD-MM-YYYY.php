@@ -30,10 +30,10 @@
     <h1 class="title invert">Taway.dev</h1>
     <div class="combar center">
         <span>
-            <a href="../../../index.html">Home</a>
-            <a href="../../../about.html">About Me</a>
-            <a href="../../../contact.html">Contact</a>
-            <a href="../../../projects.html">Projects</a>
+            <a href="../../../index.php">Home</a>
+            <a href="../../../about.php">About Me</a>
+            <a href="../../../contact.php">Contact</a>
+            <a href="../../../projects.php">Projects</a>
         </span>
     </div>
 </head>
@@ -63,7 +63,7 @@
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
         </p>
-        <a href="../../../index.html">
+        <a href="../../../index.php">
             <h3>
                 « BACK
             </h3>

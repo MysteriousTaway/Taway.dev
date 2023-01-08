@@ -13,25 +13,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 </style>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taway.dev - About Me</title>
-    <h4 class="center subtitle"> /* Back-end developer */ </h4>
-    <h1 class="title invert">Taway.dev</h1>
-    <div class="combar center">
-        <span>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
-            <a href="projects.html">Projects</a>
-        </span>
-    </div>
-</head>
-<br><br>
-
+<?php
+include('template/header.php');
+?>
 <body>
     <!-- ABOUT ME -->
     <div class="container">
@@ -206,10 +190,7 @@
         </span>
     </div>
 </body>
-<footer>
-    <div class="catImage">
-        <!-- <img src="img/sticker.webp" width="128" height="128" alt="cat"> -->
-        <img src="img/Tabbie.png" width="150" height="196" alt="cat">
-    </div>
-</footer>
+<?php
+include('template/footer.php');
+?>
 </html>

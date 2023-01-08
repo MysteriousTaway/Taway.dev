@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<!-- Import icon -->
-<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/44374628?v=4">
-
-<!-- include style.css (if this page is in root folder) -->
-<!-- <link rel="stylesheet" href="src/style.css"> -->
-
-<!-- include style.css (if this page is in blog folder) -->
-<link rel="stylesheet" href="../../../src/style.css">
-<link rel="stylesheet" href="../../../src/index.css">
-
-<!-- include style.css (if this page is in prefab folder) -->
-<!-- <link rel="stylesheet" href="../style.css"> -->
-
-<!-- Include font: -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-</style>
-<html lang="en">
 <style>
     * {
         font-family: "Comic Sans MS", "Comic Sans", cursive !important;
     }
 
     body {
-        background-image: url("../../img/2022/Bliss.jpg") !important;
+        background-image: url("blog/img/2022/Bliss.jpg") !important;
     }
 
     .container p {
@@ -88,24 +66,6 @@
     }
 </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taway.dev - Blog</title>
-    <h4 class="center subtitle"> /* Back-end developer */ </h4>
-    <h1 class="title invert">Taway.dev</h1>
-    <div class="combar center">
-        <span>
-            <a href="../../../index.html">Home</a>
-            <a href="../../../about.html">About Me</a>
-            <a href="../../../contact.html">Contact</a>
-            <a href="../../../projects.html">Projects</a>
-        </span>
-    </div>
-</head>
-<br><br>
-
 <body>
     <div class="container">
         <div class="topbar">
@@ -142,7 +102,7 @@
             Long time ago when Amazon was still selling books; websites looked so random. No design idea was off the
             table. Orange text on dark blue background, red text on lime green. Fifteen different fonts on one page, but
             most of it was written in comic sans anyways. Half of the page written in italic. It was truly the wild west
-            of internet era, but each website had its own sense of personality. Nowadays all websites use the same fonts
+            of internet era, but each website had its own sense of personality. Nowadays all websites use the same fontsblog/page/
             and design philosophies. Not only the corporate ones but also personal websites look like that. I tried to
             avoid this when I was designing this one, because I want this website to reflect myself as the creator and
             not how the corporate world wants me to present myself. I wish more people did this. We could bring back the
@@ -161,19 +121,19 @@
         <h4 class=”note center”> NOTE: yes I am aware that my style of writing is chaotic but I write what I’m thinking
             about.</h4>
 
-        <a href="../../../index.html">
+        <a href="index.php">
             <h3>
                 « BACK
             </h3>
         </a>
     </div>
 </body>
-
+<?php
+    $CustomFooter = true;
+?>
 <footer>
-    <div class="catImage">
-        <!-- <img src="img/sticker.webp" width="128" height="128" alt="cat"> -->
-        <img src="../../img/2022/Clippy.png" width="207" height="177" alt="Clippy">
+    <div class='catImage'>
+        <!-- <img src='img/sticker.webp' width='128' height='128' alt='cat'> -->
+        <img src='blog/img/2022/Clippy.png' width='150' height='196' alt='cat'>
     </div>
 </footer>
-
-</html>

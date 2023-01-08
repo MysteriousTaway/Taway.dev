@@ -54,7 +54,7 @@ body h1 {
     
     position: relative;
 
-    opacity: 75%;
+    opacity: 90%;
 }
 
 .friends a:hover {
@@ -87,7 +87,7 @@ body h1 {
     linear-gradient(to right, var(--BGAccent), var(--Text)) border-box;
     border-radius: 15px 0px 15px 0px;
     border: 4px solid transparent;
-
+    padding-bottom: 3px;
     min-width: 225px;
 }
 
@@ -97,7 +97,9 @@ body h1 {
     width: 100%;
     color: var(--Text);
     background: var(--BGLight);
-    border-radius: 15px 0px 15px 0px;
+    /* border-radius: 15px 0px 15px 0px; */
+    margin-top: 6px;
+    border-radius: 0px 0px 10px 0px;
     border-color: var(--BGDark);
 }
 
