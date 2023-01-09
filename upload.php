@@ -1,4 +1,10 @@
 <title>Taway.dev - Upload</title>
+<?php
+if(empty($_SERVER['CONTENT_TYPE']))
+{ 
+  $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded"; 
+}
+?>
 <!-- Things: -->
 <style>
     #title {
@@ -100,40 +106,30 @@ include 'template/header.php';
 ?>
 <?php
 // this code is not DRY ... i hate it
+echo "VAR DUMP:<br>";
+var_dump( $_POST );
+echo "<br>".$_SERVER['REQUEST_METHOD']."<br>";
+$addstr = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 foreach ($_POST as $key => $value) {
-    // echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
-    echo "{$key} = {$value}<br>";
-    if(str_contains($key, 'title')) {
-        echo "title";
-        $title = $value;
+    echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+    if(str_contains(htmlspecialchars($key), 'p')) {
+        $addstr = $addstr.'<p>'.$value."</p>\n";
     }
-    if(str_contains($key, 'tag')) {
-        echo "tag";
-        $tag = $value;
+    if(str_contains(htmlspecialchars($key), 'ch')) {
+        $addstr = $addstr.'<h4>'.$value."</h4>\n";
     }
 }
 $string = '<body>
 <div class="container">
     <div class="blogName">
-        <h2>'.$title.'</h2>
+        <h2>'.$_POST['title'].'</h2>
         <span>
             <h3>'.date('F j, Y').'</h3>
-            <h3 class="tag">'.$tag.'</h3>
+            <h3 class="tag">'.$_POST['tag'].'</h3>
         </span>
     </div>';
-foreach ($_POST as $key => $value) {
-    // echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
-    echo "{$key} = {$value}<br>";
-    if(str_contains($key, 'p')) {
-        echo "p<br>";
-        $string = $string.'<p>'.$value."</p>\n";
-    }
-    if(str_contains($key, 'ch')) {
-        echo "ch<br>";
-        $string = $string.'<h4>'.$value."</h4>\n";
-    }
-}
+$string = $string.$addstr;
 $string = $string.'
 <a href="index.php">
 <h3>
@@ -142,10 +138,12 @@ $string = $string.'
 </a>
 </div>
 </body>';
+// taway.dev/upload.php?title=hello?tag=world
 echo $string;
-$file = fopen("blog/unprocessed/".date('j-n-Y').".php", "w");
-fwrite($file, $string);
-echo "File written?!";
+$file = fopen("blog/unprocessed/".date('j-n-Y-s').".php", "w") or die("something something file idk");
+fwrite($file, $string)  or die("something something file cant write");
+fclose($file) or die("something something file death");
+echo 'Your upload is waiting for review. Current link: <a style="color: var(--BGAccent);" target="_blank" href="blog.php?page=../unprocessed/'.date('j-n-Y-s').'.php">Link </a>';
 }
 
 ?>
