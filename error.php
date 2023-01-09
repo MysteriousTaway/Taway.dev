@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="src/style.css">
 <!-- include index.css -->
 <link rel="stylesheet" href="src/index.css">
+<title>Taway.dev - ERROR</title>
 <?php
 include('template/header.php');
 echo "<div class='center'>";

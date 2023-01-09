@@ -15,6 +15,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 </style>
 <html lang="en">
+<title>Taway.dev - Contact</title>
 <?php
 include('template/header.php');
 ?>

@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="src/style.css">
 <!-- include index.css -->
 <link rel="stylesheet" href="src/index.css">
+<title>Taway.dev - Home</title>
 <?php
 include('template/header.php');
 ?>
@@ -36,16 +37,9 @@ include('template/header.php');
             $tag = $meta_matches[2];
 
             // extract the content:
-            // $content_pattern = '/<p>((.|\n)*)<\/p>/';
             $content_pattern = '/((.|\n)*)<p>/';
-            // preg_match($content_pattern, $matches[1], $content_matches);
-            // $content = $content_matches[1];
             $content = preg_replace($content_pattern, "", $matches[1]);
-
-            // print("Title: $title\n");
-            // print("Date: $date\n");
-            // print("Tag: $tag\n");
-            // print("Content: $content\n");
+            // Print to website:
             echo "<div class='container'>";
             echo "<div class='blogName'>";
             echo "<h2>{$title}</h2>";

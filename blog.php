@@ -1,4 +1,5 @@
 <!-- include style.css (if this page is in blog folder) -->
+<title>Taway.dev - Blog</title>
 <?php
 // Include header:
 include('template/header.php');
