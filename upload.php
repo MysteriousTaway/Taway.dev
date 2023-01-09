@@ -106,13 +106,13 @@ include 'template/header.php';
 ?>
 <?php
 // this code is not DRY ... i hate it
-echo "VAR DUMP:<br>";
-var_dump( $_POST );
-echo "<br>".$_SERVER['REQUEST_METHOD']."<br>";
+// echo "VAR DUMP:<br>";
+// var_dump( $_POST );
+// echo "<br>".$_SERVER['REQUEST_METHOD']."<br>";
 $addstr = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 foreach ($_POST as $key => $value) {
-    echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+    // echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
     if(str_contains(htmlspecialchars($key), 'p')) {
         $addstr = $addstr.'<p>'.$value."</p>\n";
     }
