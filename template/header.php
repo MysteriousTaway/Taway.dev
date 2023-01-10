@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <h4 class="center subtitle"> /* Back-end developer */ </h4>
-    <h1 class="title invert">Taway.dev</h1>
+    <h1 id="webName" class="title invert">Taway.dev</h1>
     <div class="combar center">
         <span>
             <a href="index.php">Home</a>
@@ -24,3 +24,5 @@
     </div>
 </head>
 <br><br>
+<!-- Fancy self-rewriting text: -->
+<script src="src/js/header.js"></script>
