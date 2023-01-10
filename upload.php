@@ -93,6 +93,10 @@ function AddParagraph(element) {
     var doc = document.getElementById("content").appendChild(div);
     i++;
 }
+
+function Remove() {
+    document.getElementById("container").remove();
+}
 </script>
 <?php
 echo "<link rel='stylesheet' href='src/style.css'>";
@@ -104,15 +108,11 @@ include 'template/header.php';
 // 9-1-2023:
 // date('j-n-Y');
 ?>
+<!-- Process post: -->
 <?php
-// this code is not DRY ... i hate it
-// echo "VAR DUMP:<br>";
-// var_dump( $_POST );
-// echo "<br>".$_SERVER['REQUEST_METHOD']."<br>";
 $addstr = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 foreach ($_POST as $key => $value) {
-    // echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
     if(str_contains(htmlspecialchars($key), 'p')) {
         $addstr = $addstr.'<p>'.$value."</p>\n";
     }
@@ -139,11 +139,10 @@ $string = $string.'
 </div>
 </body>';
 // taway.dev/upload.php?title=hello?tag=world
-echo $string;
-$file = fopen("blog/unprocessed/".date('j-n-Y-s').".php", "w") or die("something something file idk");
-fwrite($file, $string)  or die("something something file cant write");
-fclose($file) or die("something something file death");
-echo 'Your upload is waiting for review. Current link: <a style="color: var(--BGAccent);" target="_blank" href="blog.php?page=../unprocessed/'.date('j-n-Y-s').'.php">Link </a>';
+$file = fopen("blog/unprocessed/".date('j-n-Y-siH').".php", "w") or die('<script>window.location.href = "error.php?error=upload30"</script>');
+fwrite($file, $string)  or die('<script>window.location.href = "error.php?error=upload31"</script>');
+fclose($file) or die('<script>window.location.href = "error.php?error=upload32"</script>');
+echo '<body><h3 class="larger center">Your upload is waiting for review. Current link: <a style="color: var(--BGAccent);" target="_blank" href="blog.php?page=../unprocessed/'.date('j-n-Y-siH').'.php">Link </a></h3></body>';
 }
 
 ?>
@@ -165,7 +164,7 @@ echo 'Your upload is waiting for review. Current link: <a style="color: var(--BG
                 </p>
                 <span id="controls" class="controls">
                     <button class="add" onclick="AddParagraph(this)" type="button">+</button>
-                    <button class="upload" type="submit">Upload</button>
+                    <button onclick="Remove()" class="upload" type="submit">Upload</button>
                 </span>
             </div>
         </form>    
