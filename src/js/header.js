@@ -12,6 +12,6 @@ var i = 0;
     }
     i++;
     if(i !== Text.length){
-        setTimeout(arguments.callee, 200);
+        setTimeout(arguments.callee, Math.random() * (400 - 150) + 150);
     }
 })();
